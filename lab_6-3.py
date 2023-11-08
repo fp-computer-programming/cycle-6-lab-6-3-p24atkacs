@@ -22,24 +22,24 @@ colors = ["red", "blue", "green", "yellow"]
 
 colors.extend(["orange", "purple", "pink"])
 
-# add another color to the list
+#add another color to the list
 
 colors.append("brown")
 
-#insert a new color at index 3
+# insert a new color at index 3
 
 colors.insert(3, "black")
 
-# copy the list
+#create a copy of the list
 
 colors_copy = colors.copy()
 
-#remove one element from the copy of the list
+# remove one element from the list
 
-if len(colors_copy) > 0:
-    colors_copy.pop()  # I removed the color using the pop (removes one color in this situation) function.
+if len(colors) > 0:
+    del colors[2]  # Remove the element at index 2 (I used delete function but can delete any other color depending on the index number i put in)
 else:
-    print("The copy is empty, so no element was removed.")
+    print("The list is empty, so no element was removed.")
 
 # Print the modified list and its copy
 
